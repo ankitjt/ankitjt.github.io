@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.progress-wrapper {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #111111;
+}
+
+.progress-wrapper .progress-label {
+  width: 400px;
+  padding: 0 0 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.progress-wrapper .progress-label .progress-info {
+  margin-top: 5px;
+  line-height: 20px;
+  color: orangered;
+  font-size: 10px;
+}
+
+.progress-wrapper .progress-label .adding-progress-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.progress-wrapper .progress-label .adding-progress-wrapper input {
+  width: 260px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #919191;
+  text-transform: uppercase;
+  font-size: 10px;
+  padding-bottom: 5px;
+  outline: none;
+  color: #919191;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 2px;
+}
+
+.progress-wrapper .progress-label .adding-progress-wrapper #addlabel {
+  padding: 2px 30px;
+  background-color: #919191;
+  border: none;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+  outline: none;
+}
+
+.progress-wrapper .progress-display {
+  margin-top: 100px;
+  width: 400px;
+  color: #919191;
+  font-size: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.progress-wrapper .progress-display .progress-count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+}
+
+.progress-wrapper .progress-display .progress-count .progress-name {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.progress-wrapper .progress-display .progress-count .progress-counter {
+  background-color: #212121;
+  margin: 20px 0;
+  padding: 15px 30px;
+  font-size: 55px;
+  border-radius: 50%;
+  position: relative;
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */
