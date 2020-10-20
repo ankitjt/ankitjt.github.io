@@ -1,0 +1,245 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+  }
+
+.app-wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    
+
+    .intro-text {
+        color: #363636;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        img {
+            height: 100%;
+            width: 100%;
+        }
+        .title {
+            font-size: 35px;
+        }
+        p {
+            font-size: 12px;
+        }
+    }
+
+    .homepage-buttons-collection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        button {
+            margin: 15px 0;
+            padding: 18px 30px;
+            border-radius: 0;
+            border: transparent;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #363636;
+            letter-spacing: 2px;
+            width: 100%;
+        }
+
+        .scan-qr-button {
+            background-color: #790c5a;
+            color: #e1e1e1;
+        }
+
+        .login-link {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #790c5a;
+            font-weight: bold;
+            margin-top: 15px;
+            letter-spacing: 2px;
+        }
+    }
+
+    .create-account {
+        display: none;
+        position: absolute;
+        height: 50%;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        background-color: #ffffff;
+        color: #363636;
+        padding: 20px;
+        box-shadow: 5px 0 10px #363636;
+
+        h3 {
+            text-transform: uppercase;
+            padding-bottom: 5px;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #790c5a;
+        }
+
+        .create-account-form {
+            margin: 15px 0;
+            display: flex;
+            flex-direction: column;
+            input { 
+                margin: 15px 0;
+                border: none;
+                border-bottom: 2px solid #790c5a;
+                padding-bottom: 5px;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: #363636;
+                outline: none;
+                font-size: 14px;
+            }
+
+            .age-pass-wrapper {
+                display: flex;
+                justify-content: space-between;
+                .create-account-age {
+                    width: 80px;
+                }
+            }
+
+            .create-account-submit-button {
+                margin-top: 30px;
+                padding: 18px 30px;
+                border-radius: 0;
+                border: transparent;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: #e1e1e1;
+                letter-spacing: 2px;
+                background-color: #790c5a;
+                width: 50%;
+            }
+        }
+
+        .back-arrow-create-account {
+            font-size: 20px;
+            font-weight: bolder;
+            color: #363636;
+            margin-top: 10px;
+            display: inline-block;
+        }
+    }
+}
+
+.customer-home-page-wrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    .header-title {
+        text-transform: uppercase;
+        font-size: 14px;
+        color: #790c5a;
+        padding-bottom: 10px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .trending-brands-wrapper {
+        text-align: center;
+        padding: 20px;
+        
+        .trending-brands {
+           display: flex; 
+           flex-wrap: wrap;
+           justify-content: center;
+           
+           a {
+               text-decoration: none;
+               background-color: #e1e1e1;
+               color: #363636;
+               margin: 10px;
+               padding: 10px;
+               font-size: 12px;
+               font-weight: bold;
+               text-transform: uppercase;
+               border-radius: 6px;
+               letter-spacing: 1px;
+           }
+        }
+    }
+
+    .customer-recent {
+        margin-top: 50px;
+        width: 100%;
+        padding: 0 20px;
+        .customer-recent-product-info {
+            margin-top: 15px;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            overflow-x: scroll !important;
+            img {
+                margin: 0 10px;
+                border-radius: 6px;
+            }
+        }
+    }
+    .customer-nav {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0;
+        border-radius: 0;
+        padding: 10px;
+        .customer-nav-links {
+            text-align: center;
+            padding: 0 10px;
+            position: relative;
+            
+            a {
+                text-decoration: none;
+                color: #363636;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 12px;
+                letter-spacing: 1px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                
+                img {
+                    height: 35%;
+                    width: 35%;
+                    display: block;
+                    color: #363636;
+                    margin-bottom: 5px;
+                }
+                .search-zoom {
+                    height: 250%;
+                    width: 250%;
+                }
+                
+            }
+
+        }
+
+        // .search-zoom-search {
+        //     position: absolute;
+        //     top: -30px;
+        //     
+        // }
+    }
+}
