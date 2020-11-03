@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="popups">
+            <div class="update-budget-popup">
+                <span class="close-popup">X</span>
+                <h6>Update Budget</h6>
+                <input type="number" name="" class="update-budget-input" placeholder="enter new budget">
+                <button class="popup-submit-button" id="updateBudget">&#10004;</button>
+            </div>
+            <div class="add-expenses-popup">
+                <span class="close-popup">X</span>
+                <h6>Add Expenses</h6>
+                <input type="number" name="" class="add-expenses-input" placeholder="expense amount">
+                <textarea name="" id="" cols="30" rows="2" placeholder="expense details"></textarea>
+                <button class="popup-submit-button" id="updateExpenses">&#10004;</button>
+            </div>
+            <div class="app-links">
+                <a href="#">Profile</a>
+                <a href="#">History</a>
+                <a href="#">Downloads</a>
+                <a href="#">Mode</a>
+            </div>
+        </div>
+        <div class="month-budget">
+            <div class="app-menu-dropdown">
+                <span>&rsaquo;</span>
+            </div>
+            <span class="tagname">Current Budget</span>
+            <h2>&#x20b9; <span id="budget-value">21000.00</span></h2>
+            <h6>Last updated: <i>03-11-2020</i></h6>
+        </div>
+        <div class="add-values">
+            <button class="update-budget-button">Update Budget</button>
+        </div>
+        <div class="add-expenses">
+            <button class="add-expenses-button">Add Expenses</button>
+        </div>
+        <div class="budget-breakdown">
+            <h2>
+                <span>Budget Breakdown</span> 
+            </h2>
+            <div class="breakdown">
+                <div class="breakdown-menu">
+                    <a href="#" class="active">Donut</a>
+                    <a href="#">List</a>
+                </div>
+                <div class="breakdown-content">
+                    <canvas id="myChart" width="10" height="10" class="chartchart"></canvas>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
