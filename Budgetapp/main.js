@@ -12,6 +12,8 @@ let addExpenseButton = document.getElementsByClassName('add-expenses-button')[0]
     appMenuDropdown = document.getElementsByClassName("app-menu-dropdown")[0],
     appLinks = document.getElementsByClassName("app-links")[0]
     
+//https://medium.com/codingurukul/firebase-for-web-firebase-realtime-database-9280a52ced83
+//https://medium.com/@hasangi/writing-deleting-and-updating-data-in-firebase-realtime-database-with-javascript-f26113ec8c93
 
     //Database
     // Your web app's Firebase configuration
