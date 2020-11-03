@@ -1,0 +1,260 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,html {
+    height: 100%;
+    width: 100%;
+    background-color: #fddb3a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 70%;
+    width: 60%;
+    background-color: #f6f6f6;
+    .popups {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        transition: all 0.5s ease;
+        transform: translateY(200%);
+        padding: 20px;
+        text-align: center;
+        .close-popup {
+            position: absolute;
+            font-weight: bolder;
+            background-color: #f65c78;
+            color: #f6f6f6;
+            padding: 3px 6px;
+            font-size: 7px;
+            border-radius: 50%;
+            top: -5px;
+            right: 0;
+            cursor: pointer;
+        }
+        .popup-submit-button {
+            background-color: #fddb3a;
+            border: transparent;
+            padding: 3px 10px;
+            border-radius: 50%;
+            color: #f65c78;
+            font-weight: bold;
+            margin-top: 10px;
+            outline: none;
+            cursor: pointer;
+        }
+        .update-budget-popup {
+            position: relative;
+            background-color: #e9e9e9;
+            padding: 20px;
+            border-radius: 12px;
+            display: none;
+            h6 {
+                padding-bottom: 15px;
+                text-transform: uppercase;
+                color: #525252;
+                letter-spacing: 2px;
+                font-size: 08px;
+            }
+            input {
+                outline: none;
+                border: none;
+                border-radius: 20px;
+                color: #525252;
+                text-transform: uppercase;
+                font-size: 10px;
+                font-weight: bold;
+                padding: 14px 24px;
+                text-align: center;
+                letter-spacing: 2px;
+                width: 100%;
+            }
+        }
+        .add-expenses-popup {
+            position: relative;
+            background-color: #e9e9e9;
+            padding: 20px;
+            border-radius: 12px;
+            h6 {
+                padding-bottom: 15px;
+                text-transform: uppercase;
+                color: #525252;
+                letter-spacing: 2px;
+                font-size: 08px;
+            }
+            input {
+                outline: none;
+                border: none;
+                border-radius: 20px;
+                color: #525252;
+                text-transform: uppercase;
+                font-size: 10px;
+                font-weight: bold;
+                padding: 14px 24px;
+                text-align: center;
+                letter-spacing: 2px;
+                width: 100%;
+            }
+
+            textarea {
+                margin-top: 10px;
+                outline: none;
+                border: none;
+                width: 100%;
+                padding: 5px;
+                text-transform: uppercase;
+                font-size: 10px;
+                font-weight: bold;
+                color: #525252;
+            }
+        }
+        .app-links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            border-radius: 12px;
+            background-color: #e9e9e9;
+            a {
+                text-decoration: none;
+                text-transform: capitalize;
+                font-size: 09px;
+                color: #525252;
+                font-weight: bolder;
+                letter-spacing: 1px;
+                margin: 0 5px;
+                transition: all 0.5s ease;
+                &:hover {
+                    color: #f65c78;
+                }
+            }
+        }
+    }
+    .month-budget {
+        padding: 20px;
+        text-align: center;
+        color: #525252;
+        letter-spacing: 2px;
+        color: #f65c78;
+        position: relative;
+        .app-menu-dropdown {
+            position: absolute;
+            left: 20px;
+            top: 10px;
+            cursor: pointer;
+            span {
+                font-size: 30px;
+                transform: rotate(90deg);
+                display: inline-block;
+            }
+            
+        }
+        .tagname {
+            font-size: 8px;
+            font-weight: bolder;
+            text-transform: uppercase;
+        }
+        h6 {
+            font-size: 08px;
+        }
+    }
+    .add-values {
+        padding: 0px 20px;
+        text-align: center;
+        button {
+            padding: 14px 28px;
+            border: none;
+            text-transform: uppercase;
+            font-weight: bolder;
+            color: #f65c78;
+            letter-spacing: 2px;
+            font-size: 11px;
+            background-color: #ffffff;
+            outline: none;
+            cursor: pointer;
+            border-radius: 18px;
+        }
+    }
+
+    .add-expenses {
+        text-align: center;
+        margin-top: 30px;
+        button {
+            padding: 14px 28px;
+            border: none;
+            text-transform: uppercase;
+            font-weight: bolder;
+            color: #ffffff;
+            letter-spacing: 2px;
+            font-size: 11px;
+            background-color: #f65c78;
+            outline: none;
+            cursor: pointer;
+            border-radius: 18px;
+        }
+    }
+
+    .budget-breakdown {
+        height: inherit;
+        padding: 40px 20px;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        h2 {
+            font-size: 09px;
+            color: #f65c78;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            span {
+                border-bottom: 2px solid #f65c78;
+                padding: 5px 0; 
+                
+            }
+        }
+        .breakdown {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px 0;
+            .breakdown-content {
+                height: 100%;
+            }
+            .breakdown-menu {
+                text-align: center;
+                display: flex;
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 9px;
+                    font-weight: bold;
+                    color: #525252;
+                    letter-spacing: 1px;
+                    margin-right: 20px;
+                }
+                .active {
+                    color: #f65c78;
+                }
+            }
+            .breakdown-content {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 10px;
+                .chartchart {
+                    height: 180px !important;
+                    width: 180px !important;
+                }
+            }
+        }
+    }
+}
+
