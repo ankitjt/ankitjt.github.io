@@ -11,6 +11,25 @@ let addExpenseButton = document.getElementsByClassName('add-expenses-button')[0]
     budgetValueWrapper = document.getElementById("budget-value"),
     appMenuDropdown = document.getElementsByClassName("app-menu-dropdown")[0],
     appLinks = document.getElementsByClassName("app-links")[0]
+    
+
+    //Database
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyB0TwuH9n3FhgBsJf05wqDtuPEvIoK3ImY",
+        authDomain: "budgetapp-940f4.firebaseapp.com",
+        databaseURL: "https://budgetapp-940f4.firebaseio.com",
+        projectId: "budgetapp-940f4",
+        storageBucket: "budgetapp-940f4.appspot.com",
+        messagingSenderId: "432885896943",
+        appId: "1:432885896943:web:85e1caa206239f1e432d1a"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    let database = firebase.database()
+    console.log(database);
+    
+    let budgetAdded = database.ref("budgetValue/")
 
     //Showing App Links window to screen
     appMenuDropdown.onclick = function () {
@@ -43,6 +62,7 @@ let addExpenseButton = document.getElementsByClassName('add-expenses-button')[0]
         }
         else {
             budgetValueWrapper.innerText = updateBudgetInput.value
+            addingBudgets()
             updateBudgetInput.value = ""
             popups.style.transform = "translateY(200%)"
         }
@@ -95,3 +115,17 @@ let addExpenseButton = document.getElementsByClassName('add-expenses-button')[0]
             legend: false
         }
     });
+
+    let d = new Date();
+    console.log(d.getDate(), d.getMonth() + 1, d.getFullYear());
+    let rightMonth = d.getMonth() + 1
+    let lastUpdatedOn = d.getDate()+ ":" + rightMonth + ":" + d.getFullYear();
+    function addingBudgets() {
+        budgetAdded.child("ankit").set({
+            "month": "November",
+            "budgetValue": parseFloat(budgetValueWrapper.innerText),
+            "updatedOn": lastUpdatedOn
+        })
+    }
+
+    
