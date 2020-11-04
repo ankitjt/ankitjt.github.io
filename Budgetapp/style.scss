@@ -17,9 +17,9 @@ body,html {
 .wrapper {
     position: relative;
     overflow: hidden;
-    height: 70%;
-    width: 60%;
-    background-color: #f6f6f6;
+    height: 100%;
+    width: 1000%;
+    background-color: #fddb3a;
     .popups {
         position: absolute;
         width: 100%;
@@ -250,8 +250,8 @@ body,html {
                 justify-content: center;
                 padding: 10px;
                 .chartchart {
-                    height: 180px !important;
-                    width: 180px !important;
+                    height: 250px !important;
+                    width: 250px !important;
                 }
             }
         }
