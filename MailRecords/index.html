@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MailRecords</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+</head>
+<body>
+    <p id="windowSize"></p>
+    <div class="wrapper">
+        <div class="site-navbar">
+            <a href="index.html">Home</a>
+            <a href="records.html">Records</a>
+            <a href="#">Profile</a>
+            <a href="#">Logout</a>
+        </div>
+        <div class="record-issue">
+            <p id="wrapper-name">Record Issue</p>
+            <form action="" id="record-issue-form">
+                <!-- Issue From -->
+                <div class="issue-from">
+                    <p class="field-name-wrapper"> <span class="field-name">User Type</span></p>
+                    <select name="" id="userType">
+                        <option value="select">Select</option>
+                        <option value="Department">Department User</option>
+                        <option value="Bidder">Bidder</option>
+                    </select>
+                </div>
+                <!-- Issue Received Time and Date -->
+                <div class="issue-received">
+                    <p class="field-name-wrapper"> <span class="field-name">Issue Received on</span></p>
+                    <input type="date" name="" id="issue-receive-date">
+                    <input type="time" name="" id="issue-receive-time">
+                </div>
+                <!-- Issue Close Time and Date -->
+                <div class="issue-closed">
+                    <p class="field-name-wrapper"> <span class="field-name">Issue Closed on</span></p>
+                    <input type="date" name="" id="issue-closed-date">
+                    <input type="time" name="" id="issue-closed-time">
+                </div>
+                <input type="submit" value="Create" class="submit-btn">
+                <a class="undo" href="#">&#8634;</a>
+            </form>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-database.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

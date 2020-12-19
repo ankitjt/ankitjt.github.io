@@ -1,0 +1,170 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #fddb3a;
+}
+
+#windowSize {
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: orangered;
+    letter-spacing: 2px;
+    padding: 20px;
+}
+
+.site-navbar {
+    text-align: center;
+    a {
+        text-decoration: none;
+        font-size: 09px;
+        letter-spacing: 2px;
+        color: #525252;
+        text-transform: uppercase;
+        font-weight: bolder;
+        margin: 0 20px;
+        transition: 0.5s ease;
+        &:hover {
+            color: orangered;
+        }
+    }
+}
+
+.record-issue {
+    margin-top: 20px;
+    padding: 20px;
+    #wrapper-name {
+        font-size: 10px;
+        color: #525252;
+        font-weight: bolder;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        background-color: #ffffff;
+        padding: 10px;
+    }
+
+    #record-issue-form {
+        margin-top: 20px;
+        .field-name-wrapper {
+            margin: 20px 0;
+        }
+        .field-name {
+            font-size: 10px;
+            color: #525252;
+            font-weight: bolder;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background-color: #ffffff;
+            padding: 10px;
+            display: inline-block;
+        }
+        .submit-btn {
+            margin-top: 30px;
+            background-color: eeeeee;
+            border: transparent;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 10px 20px;
+            outline: none;
+            cursor: pointer;
+            font-weight: bolder;
+            color: #525252;
+        }
+        .undo {
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            margin-left: 20px;
+            text-transform: uppercase;
+            color: orangered;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+.showrecords {
+    margin-top: 20px;
+    padding: 20px;
+    color: #525252;
+
+    .tableLabel {
+        background: #ffffff;
+        padding: 10px;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: bolder;
+        letter-spacing: 2px;
+    }
+
+    .nofilteralert {
+        text-transform: uppercase;
+        font-weight: bolder;
+        letter-spacing: 2px;
+        color: orangered;
+        font-size: 10px;
+    }
+
+    .date-filter {
+        background-color: #fddb3a;
+        margin: 30px 10px;
+        font-size: 10px;
+        span {
+            font-weight: bolder;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        #dateFilter {
+            margin-left: 20px;
+            font-size: 11px;
+        }
+    }
+
+    .db-data {
+        margin-top: 30px;
+        background: #ffffff;
+        padding: 10px;
+        margin: 30px 10px;
+        table {
+            font-size: 11px;
+            width: 100%;
+            text-align: center;
+            
+            td {
+                padding: 5px 0;
+                font-weight: bold;
+            }
+            .header-row {
+                width: 100%;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                flex-direction: row;
+                border-bottom: 2px solid #525252 !important;
+                th {
+                    padding: 20px 0;
+                    text-transform: uppercase;
+                    font-size: 08px;
+                    letter-spacing: 1px;
+                    
+                }
+            }
+
+            .dataRow {
+                text-transform: capitalize;
+                font-size: 09px;
+                letter-spacing: 1px;
+            }
+            
+        }
+    }
+}
